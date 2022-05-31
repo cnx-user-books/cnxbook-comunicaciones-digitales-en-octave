@@ -1,0 +1,44 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>5.Modulación binaria y m-aria</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46772</md:content-id>
+  <md:title>5.Modulación binaria y m-aria</md:title>
+  <md:abstract>En este módulo se presentan los conceptos de Modulaciones Binarias y M-arias. Se incluyen dos programas en GNU Octave: el primero introductorio que cuenta con una serie de preguntas iniciales, el segundo programa, permite al usuario seleccionar los parámetros de entrada de acuerdo a la prueba que desee realizar. Se presenta un video con la utilización del programa “modulaciones” .</md:abstract>
+  <md:uuid>3e6a0fc0-98ae-4aed-973c-399d81c56460</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-683">Las técnicas de  modulación  modifican un parámetro de la señal portadora (Amplitud, frecuencia, fase) en función del mensaje con el fin de compartir el canal de transmisión, disponer de antenas con dimensiones razonables y mejorar la resistencia contra ruido e interferencia.  </para><para id="eip-833">Las señales moduladas binarias pueden ser moduladas por amplitud frecuencia y fase (ASK, FSK, PSK). En la figura 1 se hace un resumen de casos particulares de ASK (OOK), PSK (PRK) y FSK. Se muestran sus representaciones en tiempo y en frecuencia (lado positivo)</para><para id="eip-878"><figure id="mm">
+ 
+  <media id="mmc" alt="mmd">
+    <image mime-type="image/jpeg" src="../../media/fm1.jpg"/>
+  </media>
+  <caption>
+    Modulaciones Binarias
+  </caption>
+</figure></para><para id="eip-505">Las modulaciones M-arias (QAM, QPSK, MFSK) permiten entradas digitales con más de dos niveles de modulación. Una representación del diagrama de constelación se muestra en la figura 2 para las modulaciones QPSK y 8PSK.
+ 
+</para><para id="eip-507"><figure id="mmco">
+<media id="mmc1" alt="mmd1">
+    <image mime-type="image/jpeg" src="../../media/fm2.jpg"/>
+  </media>
+    </figure>
+</para><section id="eip-740"><title/><para id="eip-794">
+Si desea  ampliar los contenidos de este módulo visite el sitio web desarrollado por la Prof. Trina Adrián de Pérez: 
+  <link url="http://prof.usb.ve/tperez/docencia/3413/contenido/ModBinsinPe.pdf" window="new">Clase Modulaciones Binarias</link>.
+y
+  <link url="http://prof.usb.ve/tperez/docencia/3413/contenido/ModMultisinPe.pdf" window="new">Clase Modulaciones M-arias</link>.
+</para></section><section id="eip-883"><title>Programas</title><para id="eip-322">
+<link url="modulo5 .zip"> Programas </link>
+</para></section><section id="eip-938"><title>Video</title><para id="eip-848">
+<figure id="identificadordelvideo"><title>Modulaciones Binarias y M-arias</title><media id="id-media" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/5rYlqxIZaRc&amp;rel=0"/>
+</media>
+</figure></para>
+</section><para id="delete_me">
+     <!-- Insert module text here -->
+  </para>
+</content>
+
+</document>

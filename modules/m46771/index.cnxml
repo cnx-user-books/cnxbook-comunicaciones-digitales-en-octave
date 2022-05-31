@@ -1,0 +1,36 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>7. Codificación de Canal</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46771</md:content-id>
+  <md:title>7. Codificación de Canal</md:title>
+  <md:abstract>En este módulo se presentan los conceptos de Codificación de Canal. Se incluyen dos programas en GNU Octave: el primero introductorio que cuenta con una serie de preguntas iniciales, el segundo programa, permite al usuario seleccionar los parámetros de entrada de acuerdo a la prueba que desee realizar. Se presenta un video con la utilización del programa “codigosdebloques” .</md:abstract>
+  <md:uuid>5683cd23-892c-437a-81a3-5b9d1a036649</md:uuid>
+</metadata>
+
+<content>
+  <section id="eip-529"><title>Codificación de Canal</title><para id="eip-172">
+	En los sistemas  de comunicación digital,  la señal puede verse afectada  por diversas fuentes como el ruido introducido por el propio canal de comunicaciones y por el ruido de cuantificación, consecuencia del proceso de codificación.  
+</para></section><para id="eip-349">La finalidad de la codificación de canal es la detección y corrección de errores producidos en el mismo, debido al  ruido y distorsión introducidos  por el medio de propagación y  por las no linealidades en el propio sistema de transmisión. </para><para id="eip-124">Para medir la fidelidad de la transmisión de información se usa la probabilidad de error  que es  la probabilidad de que los símbolos a la salida del receptor sea diferentes a los símbolos transmitidos. </para><para id="eip-196">Seguidamente se revisan los tipos más usados de codificación de canal: codificación por bloques y codificación convolucional
+</para><section id="eip-721"><title>Códigos de Bloque</title><para id="eip-329">
+Son códigos de longitud fija en el cual cada bloque está constituido por un número fijo de símbolos de información a los que se agrega una cantidad fija de símbolos de paridad. Mediante los bits de paridad se agrega redundancia a la información con el fin de detectar y corregir errores; en consecuencia,  el ancho de banda aumenta reduciendo la eficiencia de transmisión. Entre los códigos de bloques más conocidos se encuentran los códigos  Hamming. 
+</para></section><section id="eip-609"><title>Códigos Convolucionales</title><para id="eip-507">
+A pesar del buen rendimiento de los Códigos de bloques, desde el punto de vista de la Probabilidad de Error resultan pesados computacionalmente. La codificación convolucional es un proceso con memoria más sencillo, ya que  opera de forma secuencial a nivel de cada bit tomando también en cuenta la información pasada.  Los símbolos a la salida del codificador son interdependientes.
+</para></section><para id="eip-195">En los códigos convolucionales se definen tres parámetros: n es el número de bits a la salida del codificador, k el número de bits de información a la entrada de éste y m el número de registros de memoria. La relación k/n es la relación o tasa de código que proporciona una medida de la eficiencia de decodificación en cuanto al ancho de banda. </para><para id="eip-518">Una virtud adicional de la Codificación Convolucional es disponer de un decodificador óptimo, basado en el Diagrama Trellis, y denominado algoritmo de Viterbi.</para><section id="eip-261"><para id="eip-67">
+ 
+Si desea  ampliar los contenidos de este módulo visite el sitio web desarrollado por la Prof. Trina Adrián de Pérez: 
+ <link url="http://prof.usb.ve/tperez/docencia/3413/contenido/CONTENIDO.htm" window="new">Clase Codificación de Canal</link>.
+</para></section><section id="eip-15"><title>Programas</title><para id="eip-147">
+
+<link url="modulo7 .zip"> Programas </link>
+</para></section><section id="eip-482"><title>Video</title><para id="eip-996">
+<figure id="identificadordelvideo"><title>Codificación de Canal por Bloques</title><media id="id-media" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/gfJ3voTroeI&amp;rel=0"/>
+
+</media>
+</figure></para></section><para id="delete_me">
+     <!-- Insert module text here -->
+  </para>
+</content>
+
+</document>

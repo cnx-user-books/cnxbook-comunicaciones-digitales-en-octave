@@ -1,0 +1,56 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>1.Introducción a GNU Octave</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46793</md:content-id>
+  <md:title>1.Introducción a GNU Octave</md:title>
+  <md:abstract>En este módulo se presentan una introducción al software libre GNU Octave. Se incluyen dos videos para la instalación de Octave 3.6.1 y GUI Octave y Octave UPM.</md:abstract>
+  <md:uuid>cd6a0ee9-4ca0-4a1c-8498-0a26fa474fa1</md:uuid>
+</metadata>
+
+<content>
+  <section id="eip-396"><title>GNU Octave</title><para id="eip-410">
+Es un lenguaje de programación de alto nivel, usado principalmente para la resolución de cálculos numéricos de alta complejidad. Provee capacidades para la resolución  numérica de  problemas lineales y no lineales, posee extensas capacidades gráficas, tanto para la visualización de datos como para su manipulación y permite la ejecución de scripts. Implementa una  interfaz de comandos interactivos de línea, su lenguaje es compatible con  C++, Fortran  y su sintaxis  es compatible con MATLAB. Es ampliamente utilizado por el entorno docente.
+</para></section><para id="eip-856">Es un software de distribución libre  apegado a las condiciones de General Public License (GNU); es posible  tener acceso al programa y al código fuente del programa para modificarlo. Funciona con sistemas operativos como Linux, Windowsy MacOS X.</para><para id="eip-197">Además de utilizar Octave para la enseñanza numérica, programación informática, simulación, modelización, también es usado en una amplia variedad de aplicaciones de investigación industrial y académica, incluyendo el procesamiento de señales, estadística genética, visión por computador, la econometría, la neurociencia y la biología computacional.</para><para id="eip-593">Octave es una aplicación orientada a la línea de comandos, no posee interfaz gráfica. Debido a esto se han desarrollado diversas opciones para instalar una interfaz gráfica compatible con el programa para que sea amigable al usuario y así sea posible  generar un aprendizaje sencillo e intuitivo.  En la Figura 1 se observa la línea de comandos para la versión de Octave 3.6.1.</para><para id="eip-202"><figure id="o1">
+   <media id="o11" alt="o111">
+    <image mime-type="image/jpeg" src="../../media/oct1.jpg"/>
+  </media>
+  <caption>
+     Línea de Comandos Octave 3.6.1
+  </caption>
+</figure></para><para id="eip-712">Las interfaces desarrolladas para Octave presentan características muy similares, brindan al usuario un conjunto de funcionalidades e interactividad, pero a su vez poseen limitaciones  estructurales y deficiencias funcionales.  Entre algunas de las interfaces desarrolladas se encuentran, GUI Octave,   Koctave, Joctave, Goctave, YAOG, Emacs, Octivate, Octave Workshop y QtOctave.</para><para id="eip-356">Las interfaces están diseñadas para ofrecer un entorno gráfico al usuario de GNU Octave que cuenten con menús, botones y ventanas de diálogo. En la figura 2 se presentan las ventanas básicas que presentan las interfaces gráficas. </para><para id="eip-968"><figure id="o2">
+   <media id="o12" alt="o112">
+    <image mime-type="image/jpeg" src="../../media/oct2.jpg"/>
+  </media>
+  <caption>
+     Ventanas principales de interfaces gráficas de Octave
+  </caption>
+</figure></para><para id="eip-641">En la Figura 3 se observan las ventanas de la interfaz gráfica GUI Octave, compatible con la versión de Octave 3.6.1.En color naranja se identifica el historial de comandos, en color azul la ventana de control y en color verde el editor. </para><para id="eip-765"><figure id="o3"><media id="o13" alt="o113">
+    <image mime-type="image/jpeg" src="../../media/oct3.jpg"/>
+  </media>
+    <caption>Ventanas de GUI Octave</caption></figure></para><section id="eip-16"><title>Instalación</title><para id="eip-837">Si desea  instalar la versión de Octave 3.6.1 visite la pagina "Octave for Windows": 
+  <link url="http://wiki.octave.org/Octave_for_Windows" window="new">Octave 3.6.1</link>.
+
+
+</para><para id="eip-876">Para descargar GUI Octave:
+  <link url="http://www.softpedia.es/programa-GUI-Octave-180957.html" window="new">GUI Octave</link>.
+</para><para id="eip-607">Si desea instalar la versión de Octave desarrollada por al Universidad Politécnica de Madrid (octaveUPM):
+  <link url="http://mat.caminos.upm.es/octave/" window="new">OctaveUPM</link>.</para></section><section id="eip-240"><title>Videos de Intalación</title><para id="eip-435"><figure id="identificadordelvideo1"><title>Intslación de GNU Octave 6.3.1</title><media id="id-mediaa" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/5ZRQ56Ol7Oo&amp;rel=0"/>
+</media>
+</figure></para><para id="eip-980"><figure id="identificadordelvideo">
+<title> Intalación de GUI Octave</title>
+<media id="id-media" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/RiTjNMdSdR4&amp;rel=0"/>
+</media>
+</figure>
+</para><para id="eip-863">Una vez realizada la instalación de GNU Octave 3.6.1 y de el GUI Octave se debe reiniciar el Ordenador</para><para id="eip-734"><figure id="identificadordelvideo2"><title>Instalación de Octave UPM </title><media id="id-media2" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/ax08k5TCdfk&amp;rel=0"/>
+</media>
+</figure></para><section id="eip-613"><title>Descargas</title><para id="eip-428">Carpeta Share : <link url="share.zip"> share </link>
+</para></section></section><para id="delete_me">
+     <!-- Insert module text here -->
+  </para>
+</content>
+
+</document>

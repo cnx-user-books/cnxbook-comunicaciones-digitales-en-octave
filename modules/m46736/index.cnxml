@@ -1,0 +1,31 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>4.Códigos de Linea</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46736</md:content-id>
+  <md:title>4.Códigos de Linea</md:title>
+  <md:abstract>En este módulo se presentan los códigos de línea usados comúnmente en un sistema de Comunicaciones Digitales: NRZ, RZ y Manchester. Se  muestras las señales en tiempo y la Densidad Espectral de Potencia (DEP) de cada código.  Se incluyen dos programas en GNU Octave: el primero introductorio que cuenta con una serie de preguntas iniciales, el segundo programa, permite al usuario seleccionar los parámetros de entrada de acuerdo a la prueba que desee realizar. Se presenta un video con la utilización  del programa “Codigosdelinea” simulando un  código de línea NRZp.</md:abstract>
+  <md:uuid>1231eada-bbdf-4e38-bbb3-424cd61277d8</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me"><title>Códigos de Linea </title>Para poder transmitir por el canal de comunicación, una vez codificada la señal, es necesario  convertir la secuencia de símbolos en una forma de onda adecuada para la transmisión bandabase denominada códigos de línea.</para><para id="eip-105">Aunque existen numerosos códigos de línea, los más conocidos son los llamados Retornos a Cero (RZ) y no retorno a cero (NRZ). El código NRZ mantiene constante el nivel de uno y cero durante todo el intervalo de bit. Si es polar, el uno y el cero tienen representaciones opuestas. En la codificación RZ, a la mitad del intervalo de bit el nivel de uno o del cero va a cero. También es conocido el código Manchester donde el símbolo uno se representa por medio de un pulso positivo seguido de uno negativo, ambos de igual amplitud y de medio símbolo de anchura; para símbolo cero las polaridades de estos pulsos se invierten. </para><para id="eip-840">En la figura 1 se muestran los códigos de línea más utilizados. </para><para id="eip-539"><figure id="codigo-linea"><media id="dogpic" alt="A dog sitting on a bed">
+    <image mime-type="image/jpeg" src="../../media/figura1cl.jpg"/>
+  </media>
+  
+<caption>                      Códigos de Línea.
+  </caption></figure></para><para id="eip-910">En la tabla 1 se  muestran las expresiones de la Densidad Espectral de Potencia (DEP)  de los distintos códigos de línea en el caso binario, asumiendo que los voltajes posibles son A y –A volts. </para><para id="eip-645"><figure id="cltabla"><media id="cltabl4a" alt="tabla">
+    <image mime-type="image/jpeg" src="../../media/tablacl.jpg"/>
+  </media>
+<caption>Tabla 1. DEP Códigos de Línea</caption></figure>
+</para><section id="eip-121"><title/><para id="linkexample">
+ 
+ Si desea  ampliar los contenidos de este módulo visite el sitio web desarrollado por la Prof. Trina Adrián de Pérez: 
+  <link url="http://prof.usb.ve/tperez/docencia/3413/contenido/CodigosLinea.pdf" window="new">Clase Códigos de Línea</link>.
+</para>
+        </section><section id="eip-136"><title>Descarga de Programas</title><para id="eip-699"><link url="modulo4 .zip"> Programas Códigos de Línea </link>
+</para></section><section id="eip-345"><title>Video</title><figure id="moonlanding-youtube"><title>Codigos de Linea </title><media id="yt-media" display="block" alt="Video of the Neil Armstrong on the Moon">
+    <iframe width="425" height="344" src="http://www.youtube.com/v/bREalmz9ml0&amp;rel=0"/>
+ </media>
+</figure></section></content>
+</document>

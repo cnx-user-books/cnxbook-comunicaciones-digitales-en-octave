@@ -1,0 +1,90 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>6.Interferencia Intersimbólica</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46794</md:content-id>
+  <md:title>6.Interferencia Intersimbólica</md:title>
+  <md:abstract>En este módulo se presentan una introducción a los conceptos de ISI. Se incluyen un programa en GNU Octave donde se observa la capacidad que tiene un filtro coseno alzado para combatir ISI.</md:abstract>
+  <md:uuid>027111dc-6c07-4088-a814-58d7b25e6b11</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-221">Para transmitir una señal digital, independiente del código de línea usado, se necesita un canal de ancho de banda infinito. Sin embargo, el canal tiene ancho de banda finito, por lo tanto los pulsos se esparcen y hará que estos entorpezcan la decisión sobre los bits vecinos. En la figura 1 se observan tres bits seguidos que se han dispersado debido a que el canal no tiene ancho de banda infinito. Podría ocurrir, que cualquiera de estos bits sea visto como un cero al llegar al receptor </para><para id="eip-569"><figure id="c1">
+  
+  <media id="e1" alt="ee1">
+    <image mime-type="image/jpeg" src="../../media/i1.jpg"/>
+  </media>
+  <caption>
+     3 Bits Dispersados
+  </caption>
+</figure></para><section id="eip-962"><title>Criterios de Nyquist </title><para id="eip-857">
+La señal codificada y(t), se expresa como la convolución de una serie de impulsos aleatorios x(t) con un pulso determinístico p(t); para variar y(t) se puede variar x(t) o p(t). Laforma del pulso p(t) puede ser determinante para evitar la ISI. 
+</para><para id="eip-902">Nyquist desarrollo criterios para seleccionar los pulsos de manera de controlar la ISI. </para><para id="eip-105"><title>Primer Criterio de Nyquist:</title>Se desea un pulso recibido que tenga las siguientes características: </para><equation id="eip-599"><media id="cc1" alt="ccc1">
+    <image mime-type="image/jpeg" src="../../media/ei1.jpg"/>
+  </media>
+
+</equation><para id="eip-336">El pulso p(t) sería entonces</para><equation id="eip-940"><media id="cc2" alt="ccc2">
+    <image mime-type="image/jpeg" src="../../media/ei2.jpg"/>
+  </media>
+</equation><para id="eip-165">En la figura 2 se observa la forma del pulso en tiempo y su espectro en frecuencia</para><para id="eip-341"><figure id="c231">
+  
+  <media id="m231" alt="m321">
+    <image mime-type="image/jpeg" src="../../media/i2.jpg"/>
+  </media>
+  <caption>
+    Pulso en tiempo y Frecuencia
+  </caption>
+</figure>
+</para><para id="eip-863">Este tipo de pulso no es realizable, flexibilizando el requisito de ancho de banda; por ejemplo se puede permitir un P(f) que ocupe un ancho de banda mayor que 0.5fb (figura 3)
+</para><para id="eip-801"><figure id="c41">
+  
+  <media id="jj1" alt="jj1">
+    <image mime-type="image/jpeg" src="../../media/i3.jpg"/>
+  </media>
+
+</figure>
+</para><para id="eip-426">En el receptor se muestrea  cada tb. Se desea  que al muestrear cada pulso y sus vecinos, solo quede el valor del pulso en el instante de muestreo de interés.
+Si se toma el valor en t=0 esto implica que al sumar todas las repeticiones de P(f) cada fb estas deben sumar una constante (figura 4)
+</para><para id="eip-842"><media id="ccc1" alt="cccc1">
+    <image mime-type="image/jpeg" src="../../media/ec3.jpg"/>
+  </media>
+</para><para id="eip-812"><figure id="cg1">
+  
+  <media id="gg1" alt="g1">
+    <image mime-type="image/jpeg" src="../../media/i4.jpg"/>
+  </media>
+
+</figure>
+</para><para id="eip-400">A este tipo de filtros se les llama filtros vestigiales. </para><para id="eip-342">Para analizar matemáticamente el efecto, es conveniente descomponer P(f) en dos componentes :</para><para id="eip-628"><figure id="cf1">
+  
+  <media id="ff1" alt="f1">
+    <image mime-type="image/jpeg" src="../../media/i5.jpg"/>
+  </media>
+  <caption>
+     3 Bits Dispersados
+  </caption>
+</figure>
+</para><para id="eip-820">H1(f) tiene simetría alrededor de 0.5tb</para><para id="eip-250"><media id="ccc41" alt="cccc41">
+    <image mime-type="image/jpeg" src="../../media/ec4.jpg"/>
+  </media>
+</para><para id="eip-832">El Sinc se anula cada t=n tb excepto en t=0 que vale 1.
+Observe que H1 (f) es simétrica y par, por lo tanto:
+</para><para id="eip-583"><media id="ccc541" alt="cccc541">
+    <image mime-type="image/jpeg" src="../../media/ec5.jpg"/>
+  </media>
+</para><para id="eip-393">Observe que el término sinusoidal fuera de la integral se anula en cada ntb. Por lo tanto, como</para><para id="eip-566"><media id="ccc5641" alt="cccc5641">
+    <image mime-type="image/jpeg" src="../../media/ec6.jpg"/>
+  </media>
+</para><para id="eip-597">el cual  vale cero para todo t= ntb y toma el valor de 1/ tb para t=0 . Esto evita la interferencia inter simbólica.</para><para id="eip-900"><title>Segundo Criterio de Nyquist:</title>Buscando eliminar la Interferencia inter simbólica y disminuir el ancho de banda, se define el segundo criterio de Nyquist, el cual se basa en definir los pulsos de manera que exista interferencia controlada entre un bit y sus vecinos mas cercanos. Conociendo la ley de interferencia uno puede detectar cada bit en el receptor. La señal ocupará menos ancho de banda pero consumirá mas potencia.
+</para></section><section id="eip-404"><title>Programa</title><para id="eip-134"><link url="modulo6 .zip"> Programa </link>
+</para></section><section id="eip-964"><title>Video</title><para id="eip-337">
+<figure id="identificadordelvideo"><title>Interferencia Intersimbólica (ISI)</title><media id="id-media" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/fEiXrUDJ7I4&amp;rel=0"/>
+</media>
+</figure></para>
+</section><para id="delete_me">
+     <!-- Insert module text here -->
+  </para>
+</content>
+
+</document>

@@ -1,0 +1,19 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="es">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col11528</md:content-id>
+    <md:title>Comunicaciones Digitales en Octave</md:title>
+    <md:language>es</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>05a36310-3a5b-4563-9fe5-ce9078bdc648</md:uuid>
+<md:slug>comunicaciones-digitales-en-octave</md:slug>
+</metadata>
+  <col:content>
+    <col:module document="m46736"/>
+    <col:module document="m46735"/>
+    <col:module document="m46734"/>
+    <col:module document="m46771"/>
+    <col:module document="m46772"/>
+    <col:module document="m46793"/>
+    <col:module document="m46794"/>
+  </col:content>
+</col:collection>

@@ -1,0 +1,55 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>2. Codificación de Fuente</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46735</md:content-id>
+  <md:title>2. Codificación de Fuente</md:title>
+  <md:abstract>En este módulo se explicará detalladamente la teoría referente a codificación de fuente: modulación por código de pulso (PCM) y Modulación diferencial de Pulsos codificados(DPCM).Se incluyen dos programas en GNU Octave: el primero introductorio que cuenta con una serie de preguntas iniciales, el segundo programa, permite al usuario seleccionar los parámetros de entrada de acuerdo a la prueba que desee realizar. Se presenta un video con la utilización  del programa “Codigosdefuente”.</md:abstract>
+  <md:uuid>6ac73fad-448c-4144-9e8e-8daad3ac43df</md:uuid>
+</metadata>
+
+<content>
+  <section id="eip-310"><title>Codificación de Fuente</title><para id="eip-812">
+Los sistemas de comunicaciones tienen como propósito transmitir información de fuente a destino. La fuente de información  es una función variante en el tiempo que se modela  mediante un proceso estocástico. En consecuencia, el sistema de comunicaciones está diseñado  para transmitir la salida de un proceso estocástico (fuente de información) a un destino a través de un medio estocástico (canal). 
+
+	Las fuentes de información pueden clasificarse como fuentes analógicas  o como fuentes discretas. Si la información, analógica o discreta,  debe ser adaptada para trabajar con un sistema de comunicación digital, esta adaptación al sistema se conoce como Codificación de fuente, en este bloque se buscan técnicas para convertir  de forma eficiente las fuentes arbitrarias de información en mensaje digital, eliminando la posible redundancia que presente la fuente de información.
+</para></section><section id="eip-271"><title>Modulación de Pulsos codificados (Pulse- Code Modulation PCM) </title><para id="eip-707">
+Existen dos operaciones básicas en el proceso de conversión analógico digital de una señal: discretización en tiempo (muestreo) y discretización en amplitud (cuantificación). 
+</para></section><para id="eip-41"><title>Muestreo</title>El muestreo es un proceso lineal que permite transformar una señal de espectro limitado y continuo en el tiempo, en una serie (señal discreta) de valores de amplitud que constituyen sus muestras. Se puede representar matemáticamente la señal muestreada como el producto de la señal analógica x(t) por  un tren de impulsos, esto es lo que se llama muestreo ideal, ecuación 1.</para><equation id="eip-301"><media id="ec11" alt="ecu1">
+    <image mime-type="image/jpeg" src="../../media/ecu1.jpg"/>
+  </media>
+ 
+</equation><para id="eip-459">Donde x(t) es la señal muestreada, x(nts) es la amplitud de la muestra y  ts es el período de muestreo o distancia entre muestras. 
+
+	En frecuencia, esta multiplicación en tiempo corresponde a una convolución entre el espectro de la señal analógica y el espectro del tren de delta, ecuación 2.
+</para><equation id="eip-75"><media id="ec12" alt="ecu2">
+    <image mime-type="image/jpeg" src="../../media/ecu2.jpg"/>
+  </media>
+ </equation><para id="eip-668">Donde fs es la frecuencia de muestreo.</para><para id="eip-777">La ecuación 2 muestra que el espectro de la señal muestreada es la suma infinita de versiones escaladas y desplazadas múltiplos de fs  de la señal original.  Las versiones desplazadas no se solapan si la frecuencia de muestreo fs es mayor o igual a dos veces el ancho de banda de la señal analógica. 
+	
+</para><para id="eip-933"><title>Cuantificación</title>La cuantificación es una operación no lineal, que consiste en dividir el rango total de la amplitud de la señal en M niveles de cuantificación de  tamaño a, donde a es llamado el paso del cuantificador.  Para cada instante de muestreo se determina en que intervalo de voltajes está la señal y, en base a esto, se le asigna uno de los M niveles de cuantificación.
+
+</para><para id="eip-79">La cuantificación puede ser uniforme o no uniforme cuando los pasos se eligen del mismo tamaño o no respectivamente. 
+
+	</para><para id="eip-835">Dependiendo de la aplicación y del receptor se eligen los niveles de cuantificación. Si se escoge M= 2n una señal cuantificada con M niveles puede ser convertida en una señal binaria donde cada nivel se representará con n bits; esto implica una velocidad de transmisión n veces mayor que la frecuencia de muestreo y por consiguiente un incremento del ancho de banda.
+	</para><para id="eip-40">La cuantificación genera un  error, llamado también  ruido de cuantificación  ε, definido como:</para><equation id="eip-533"><media id="ec13" alt="ecu3">
+    <image mime-type="image/jpeg" src="../../media/ecu3.jpg"/>
+  </media>
+ </equation><para id="eip-790">Donde xq es la señal cuantificada y x es la señal muestreada.
+La relación señal a ruido de cuantificación  se define como:
+</para><equation id="eip-756"><media id="ec14" alt="ecu4">
+    <image mime-type="image/jpeg" src="../../media/ecu4.jpg"/>
+  </media>
+ </equation><para id="eip-313">Donde
+E[x2] es la  Potencia Promedio total de la Señal 
+E[e2] es laPotencia Promedio del error o ruido de cuantificación
+</para><para id="eip-277">Si x(t) tiene una distribución probabilística no uniforme conviene usar un cuantificador no uniforme; es decir, uno que tenga pasos más estrechos en aquellas zonas de voltaje más frecuentes y pasos más grandes en zonas menos probables. 	</para><para id="eip-464">Aplicar una cuantificación no uniforme es equivalente a pasar la señal a través de un compresor y aplicar a la señal comprimida un cuantificador uniforme. </para><para id="eip-649">Si se desea reducir la redundancia de la señal muestreada, haciendo uso de su comportamiento estadístico, se puede emplear DPCM el cual se describe a continuación. </para><para id="eip-278"><title>Modulación diferencial de Pulsos codificados (Differential Pulse Code Modulation DPCM)</title>Los sistemas DPCM se basan en los sistemas PCM, pero realizan la cuantificación de la diferencia de cada muestra de la señal (x[n] ) con una estimación o predicción de la misma de la misma.  En la figura 1 se muestra un diagrama del cuantificador DPCM. Cuando el predictor produce una buena estimación de la señal de entrada, la entrada del cuantificador Q, llamada error de predicción, requerirá un cuantificador de menos niveles y se logra un ahorro en la cantidad de bits para representar la señal.</para><para id="eip-507"><figure id="dpcm"><media id="dpcmm" alt="ddpcm">
+    <image mime-type="image/jpeg" src="../../media/figura 1.jpg"/>
+  </media>
+ 
+<caption>Cuantificador DPCM</caption></figure></para><para id="eip-595">El predictor  estima el valor de una muestra basándose en muestras anteriores pesadas, el valor de estimación debe ser  lo más cercano a la muestra correspondiente para así  minimizar la potencia de error de cuantificación. Los pesos o coeficientes del predictor se calculan  a través de las ecuaciones resultantes de minimizar el error de predicción.</para><section id="eip-524"><title>Descarga de Programas </title><para id="eip-860"><link url="modulo2 .zip"> Programas Codificación de Fuente </link></para></section><section id="eip-168"><title>Video</title><para id="eip-815"><figure id="identificadordelvideo"><title>Codificación de Fuente</title><media id="id-media" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/OUL6rp6iqvA&amp;rel=0"/>
+</media>
+</figure></para></section></content>
+
+</document>

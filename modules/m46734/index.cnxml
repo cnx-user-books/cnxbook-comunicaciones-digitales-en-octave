@@ -1,0 +1,31 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>3. Procedimiento de Ortogonalización Gram Schmidt</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m46734</md:content-id>
+  <md:title>3. Procedimiento de Ortogonalización Gram Schmidt</md:title>
+  <md:abstract/>
+  <md:uuid>8635c2c2-4edd-460f-8822-8cedf2788e17</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-782">A la salida del bloque de codificación de fuente (PCM-DPCM) ya se dispone de una secuencia de símbolos o bits a los cuales hay que asignarles formas de onda temporales a fin de lograr una adecuada transmisión a través del canal. Para visualizar el problema de trasmisión de señales de una manera gráfica, simplificar los cálculos matemáticos y para resolver el problema de detección, cada forma de onda se puede representar en  función de un conjunto finito de bases ortonormales uj(t). Cada forma de onda   tendría asociada una cierta combinación de coeficientes sij (ecuación 1)</para><equation id="eip-135"><media id="ec1" alt="eec1">
+    <image mime-type="image/jpeg" src="../../media/egs1.jpg"/>
+  </media>
+  </equation><para id="eip-961">Donde Si(t)  es la forma de onda que se desea representar. </para><para id="eip-8">Esto es similar a la representación de vectores en función de bases ortogonales.</para><para id="eip-256">A través del procedimiento de ortogonalización Gram-Schmidt, las señales de energía pueden ser representadas por un conjunto de bases ortonormales que se derivan de la señal original.  </para><para id="eip-337">Sea {s1,s2,...,sk} un conjunto de señales que representan una determinada transmisión, la familia de bases ortonormales {u1, u2,..., un}, ortogonales entre sí y de  energía unitaria; se genera  de  acuerdo a la ecuación 2.</para><equation id="eip-53"><media id="doc" alt="bed">
+    <image mime-type="image/jpeg" src="../../media/egs2.jpg"/>
+  </media>
+  </equation><para id="eip-762">La representación de distintas formas de onda en un plano de N dimensiones definido por bases ortonormales se conoce como diagrama de constelación. Usualmente en la práctica, para los tipos más usados de modulaciones, se implementan  dos bases; en consecuencia los ejes que  suelen ser llamados I (por In-phase y Q (por Quadrature). Los puntos en la constelación representan los símbolos de codificación o modulación que componen el alfabeto. La tasa de símbolos por segundo y la potencia de transmisión son parámetros que están inmersos en esta representación. Una de las ventajas de emplear el Procedimiento de Ortogonalización es el surgimiento natural de un receptor óptimo cuya estructura se muestra en la figura 1.</para><para id="eip-438"><figure id="gs"><media id="gsc" alt="gsd">
+    <image mime-type="image/jpeg" src="../../media/figs1.jpg"/>
+  </media>
+  
+<caption>Receptor Óptimo
+  </caption></figure></para><para id="eip-831">Una vez conocido el Procedimiento de Ortogonalización Gram-Schmidt se estudian las diferentes  formas de señal a transmitir. Si son bandabase se habla  de Códigos de Línea, si son Pasabanda  de Modulación binaria o m-aria. Sin embargo, para mejorar la fortaleza frente al ruido se utiliza, antes de esos bloques, un sistema para compensar la redundancia perdida en el Codificador de Fuente llamado Codificación de Canal</para><section id="eip-64"><title>Programas</title><para id="eip-851"><link url="modulo3 .zip"> Programas Ortogonalización Gram Schmidt </link></para></section><section id="eip-124"><title/><para id="eip-728">
+Si desea  ampliar los contenidos de este módulo visite el módulo  desarrollado por la Ing.Mezoa: 
+  <link url="http://cnx.org/content/m35711/latest/" window="new">Teoría básica de las Constelaciones</link>.
+</para></section><section id="eip-92"><title>Video</title><para id="eip-318"><figure id="identificadordelvideo"><title>Ortogonalización Gram Schmidt </title><media id="id-media" display="block" alt="Video">
+<iframe width="425" height="344" src="http://www.youtube.com/v/VgvyxzUHcm4&amp;rel=0"/>
+</media>
+</figure></para></section></content>
+
+</document>
